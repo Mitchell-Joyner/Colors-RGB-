@@ -23,21 +23,26 @@ Color.isColor = function(rgb){
 
 //redIntensity
 Color.redIntensity = function(rgb){
-  Math.round(redworks/255)*100);
-
+let intensity0 = Math.round(rgb[0]/255)*100);
+return intensity0;
 };
 
 //greenIntensity
 Color.greenIntensity = function(rgb){
-  Math.round((greenworks/255)*100);
+let intensity1 = Math.round((rgb[1]/255)*100);
+return intensity1;
 };
 
 //blueIntensity
 Color.blueIntensity = function(rgb){
-  Math.round(blueworks/255)*100);
+let intensity2 = Math.round(rgb[2]/255)*100);
+return intensity2;
 };
 
 //brightness
-
+Color.brightness = function(rgb){
+let bright = (intensity0+intensity1+intensity2)/3;
+return bright;
+};
 
 //complement
