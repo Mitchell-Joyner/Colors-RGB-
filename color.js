@@ -41,8 +41,10 @@ return intensity2;
 
 //brightness
 Color.brightness = function(rgb){
-let bright = (intensity0+intensity1+intensity2)/3;
+let bright = (rgb[0]+rgb[1]+rgb[2])/3;
 return bright;
 };
 
 //complement
+this.complement = function(rgb){
+}
